@@ -14,4 +14,7 @@ public class Main {
             System.out.println("i = " + i);
         }
     }
+    public void cos(){
+        System.out.println("hello");
+    }
 }
