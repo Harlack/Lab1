@@ -1,24 +1,26 @@
+import zad2.FoodDelivery;
+import zad32.*;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
-    public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+    public static void main(String[] args){
+        Student student = new Student();
+        Teacher teacher = new Teacher();
+        PeopleInfo peopleInfo = new PeopleInfo();
+        peopleInfo.humanId(student);
+        peopleInfo.humanId(teacher);
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        TurnRight right = new TurnRight();
+        TurnLeft left = new TurnLeft();
+        Plane plane = new Plane();
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i + "1");
-            System.out.println("i = " + i + " test");
-            System.out.println("coscos");
-        }
-        System.out.println("xx");
+
+        plane.fly(right);
+        plane.fly(left);
+
+
     }
 
-    public void cos() {
-        System.out.println("hello");
-    }
+
 }
